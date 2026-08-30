@@ -5,8 +5,8 @@ dev = [ ]
 includes = ["xontrib"]
 
 [build-system]
-requires = ["pdm-pep517>=1.0.0"]
-build-backend = "pdm.pep517.api"
+requires = ["pdm-backend>=2.0.0"]
+build-backend = "pdm.backend"
 
 [project]
 # PEP 621 project metadata
@@ -20,7 +20,7 @@ dependencies = [
     "xonsh>=0.12",
 ]
 name = "xontrib-superfile"
-version = "0.0.1"
+version = "0.0.2"
 description = "superfile support function for xonsh shell"
 readme = "README.md"
 keywords = ["xontrib", "xonsh"]

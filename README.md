@@ -5,18 +5,26 @@
 ## Installation
 
 To install use pip:
-
 ``` bash
 xpip install xontrib-superfile
-# or: xpip install -U git+https://github.com/TechnoStrife/xontrib-superfile
+```
+``` bash
+xpip install -U git+https://github.com/TechnoStrife/xontrib-superfile
 ```
 
 ## Usage
-It adds `sf` alias function. So commands like `cd` will work from superfile.
+Enable `cd_on_quit` in [superfile config](https://superfile.dev/configure/superfile-config/):
+```
+cd_on_quit = true
+```
+
+This xontrib adds `sf` alias function. So commands like `cd` will work from superfile.
 ``` bash
 $ xontrib load superfile
 $ sf
 ```
+
+Now you can quit superfile normally and xonsh will cd into the last directory.
 
 `superfile` can also be launched with shortcut `Ctrl+N`. 
 This can be changed by `$XONSH_SUPERFILE_KEY="c-n"` or disabled with `$XONSH_SUPERFILE_KEY=""`. 

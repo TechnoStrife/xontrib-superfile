@@ -5,7 +5,7 @@ from xonsh.built_ins import XSH
 from xonsh.tools import uncapturable
 
 
-superfile = "superfile"
+superfile = "superfile"  # for nixos
 if shutil.which("superfile") is None:
     superfile = "spf"
 
