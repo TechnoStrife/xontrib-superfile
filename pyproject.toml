@@ -1,8 +1,5 @@
 [project.optional-dependencies]
-dev = [
-    "pytest",
-    "black",
-]
+dev = [ ]
 
 [tool.pdm.build]
 includes = ["xontrib"]
@@ -15,22 +12,22 @@ build-backend = "pdm.pep517.api"
 # PEP 621 project metadata
 # See https://www.python.org/dev/peps/pep-0621/
 authors = [
-    {name = "Noortheen Raja NJ", email = "jnoortheen@gmail.com"},
+    {name = "TechnoStrife", email = "technostrife@gmail.com"},
 ]
 license = {text = "MIT"}
 requires-python = ">=3.7"
 dependencies = [
     "xonsh>=0.12",
 ]
-name = "xontrib-broot"
-version = "0.2.1"
-description = "broot support function for xonsh shell"
+name = "xontrib-superfile"
+version = "0.0.1"
+description = "superfile support function for xonsh shell"
 readme = "README.md"
 keywords = ["xontrib", "xonsh"]
-classifiers = ["Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Natural Language :: English", "Operating System :: OS Independent", "Topic :: System :: Shells", "Topic :: System :: System Shells", "Topic :: Terminals", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8"]
+classifiers = ["Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Natural Language :: English", "Operating System :: OS Independent", "Topic :: System :: Shells", "Topic :: System :: System Shells", "Topic :: Terminals", "Programming Language :: Python", "Programming Language :: Python :: 3"]
 
 [project.urls]
-Documentation = "https://github.com/jnoortheen/xontrib-broot/blob/master/README.md"
-Code = "https://github.com/jnoortheen/xontrib-broot"
-"Issue tracker" = "https://github.com/jnoortheen/xontrib-broot/issues"
-repository = "https://github.com/jnoortheen/xontrib-broot"
+Documentation = "https://github.com/TechnoStrife/xontrib-superfile/blob/master/README.md"
+Code = "https://github.com/TechnoStrife/xontrib-superfile"
+"Issue tracker" = "https://github.com/TechnoStrife/xontrib-superfile/issues"
+repository = "https://github.com/TechnoStrife/xontrib-superfile"
