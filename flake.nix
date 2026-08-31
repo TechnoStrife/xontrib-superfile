@@ -34,6 +34,7 @@
 
             build-system = with pkgs.python314Packages; [
               build
+              pdm-backend
               xonsh
             ];
 

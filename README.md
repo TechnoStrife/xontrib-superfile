@@ -18,7 +18,7 @@ Enable `cd_on_quit` in [superfile config](https://superfile.dev/configure/superf
 cd_on_quit = true
 ```
 
-This xontrib adds `sf` alias function. So commands like `cd` will work from superfile.
+This xontrib adds `sf` alias function.
 ``` bash
 $ xontrib load superfile
 $ sf
@@ -27,9 +27,9 @@ $ sf
 Now you can quit superfile normally and xonsh will cd into the last directory.
 
 `superfile` can also be launched with shortcut `Ctrl+N`. 
-This can be changed by `$XONSH_SUPERFILE_KEY="c-n"` or disabled with `$XONSH_SUPERFILE_KEY=""`. 
+This can be changed by setting `$XONSH_SUPERFILE_KEY="c-n"` before loading or disabled with `$XONSH_SUPERFILE_KEY=""`. 
 (PS [PTK's keybinding guide](https://python-prompt-toolkit.readthedocs.io/en/master/pages/advanced_topics/key_bindings.html#list-of-special-keys) 
-for full list of key names.)
+for full list of key names, not all can be used as a shortcut.)
 
 ## Credits
 
