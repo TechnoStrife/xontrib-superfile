@@ -9,7 +9,7 @@ superfile_name = None
 
 
 @uncapturable
-def _sf(args, stdin=None, stdout=None, stderr=None):
+def _spf(args, stdin=None, stdout=None, stderr=None):
     global superfile_name
     if superfile_name is None:
         if shutil.which("superfile") is not None:
@@ -34,7 +34,7 @@ def _sf(args, stdin=None, stdout=None, stderr=None):
     return status_code
 
 
-XSH.aliases["sf"] = _sf
+XSH.aliases["spf"] = _spf
 
 
 @XSH.builtins.events.on_ptk_create
@@ -53,7 +53,7 @@ def custom_keybindings(bindings, **kw):
 
     @handler("XONSH_SUPERFILE_KEY", "c-n")
     def start_superfile(event):
-        _sf([])
+        _spf([])
 
 
 if __name__ == "__main__":

@@ -18,13 +18,15 @@ Enable `cd_on_quit` in [superfile config](https://superfile.dev/configure/superf
 cd_on_quit = true
 ```
 
-This xontrib adds `sf` alias function.
+This xontrib adds `spf` alias function.
 ``` bash
 $ xontrib load superfile
-$ sf
+$ spf
 ```
 
 Now you can quit superfile normally and xonsh will cd into the last directory.
+
+You can also add your own alias like this: `aliases['s'] = 'spf'`.
 
 `superfile` can also be launched with shortcut `Ctrl+N`. 
 This can be changed by setting `$XONSH_SUPERFILE_KEY="c-n"` before loading or disabled with `$XONSH_SUPERFILE_KEY=""`. 
