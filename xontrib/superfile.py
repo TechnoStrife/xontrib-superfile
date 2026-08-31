@@ -5,16 +5,21 @@ from xonsh.built_ins import XSH
 from xonsh.tools import uncapturable
 
 
-superfile = "superfile"  # for nixos
-if shutil.which("superfile") is None:
-    superfile = "spf"
+superfile_name = None
 
 
 @uncapturable
 def _sf(args, stdin=None, stdout=None, stderr=None):
+    global superfile_name
+    if superfile_name is None:
+        if shutil.which("superfile") is not None:
+            superfile_name = "superfile"  # for nixos
+        else:
+            superfile_name = "spf"
+
     spf_last_dir = Path(XSH.env.get("HOME") + "/.local/state/superfile/lastdir")
     status_code: int = subprocess.call(
-        (superfile,) + tuple(args),
+        (superfile_name,) + tuple(args),
         stdin=stdin,
         stderr=stderr,
         stdout=stdout,

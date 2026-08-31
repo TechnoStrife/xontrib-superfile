@@ -20,7 +20,7 @@ dependencies = [
     "xonsh>=0.12",
 ]
 name = "xontrib-superfile"
-version = "0.0.2"
+version = "0.0.3"
 description = "superfile support function for xonsh shell"
 readme = "README.md"
 keywords = ["xontrib", "xonsh"]
