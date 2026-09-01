@@ -26,7 +26,7 @@
 
           packages.default = pkgs.python314Packages.buildPythonPackage {
             pname = "xontrib-superfile";
-            version = "0.0.4";
+            version = "0.0.5";
             pyproject = true;
             src = ./.;
 
