@@ -12,6 +12,18 @@ xpip install xontrib-superfile
 xpip install -U git+https://github.com/TechnoStrife/xontrib-superfile
 ```
 
+### Nix
+If you're using nix, you can use [NUR](https://github.com/drmikecrowe/nur-packages) to install like so:
+```nix
+    programs.xonsh =  {
+        extraPackages = ps: with ps; [
+            pkgs.nur.repos.xonsh-xontribs.xontrib-superfile
+        ];
+    };
+```
+
+Or, you can import this repo directly into your flake and use the package.
+
 ## Usage
 Enable `cd_on_quit` in [superfile config](https://superfile.dev/configure/superfile-config/):
 ```
