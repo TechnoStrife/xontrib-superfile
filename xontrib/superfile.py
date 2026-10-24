@@ -41,6 +41,7 @@ def _spf(args, stdin=None, stdout=None, stderr=None):
         stdin=stdin,
         stderr=stderr,
         stdout=stdout,
+        env=XSH.env.detype(),
     )
 
     if status_code == 0 and spf_last_dir.is_file():
